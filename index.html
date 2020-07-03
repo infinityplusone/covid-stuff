@@ -1,81 +1,20 @@
 <html>
 <head>
     <title>Florida vs. New Jersey</title>
-    <style type="text/css">
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .states {
-        display: flex;
-        align-items: flex-start;
-        padding: 3rem;
-    }
-
-    .state {
-        width: 100%;
-        flex: 1 auto auto;
-        max-width: 720px;
-        position: relative;
-    }
-    .state > div {
-        position: absolute;
-        height: 400px;
-        width: 652px;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
-    .cases-new:after {
-        content: " ";
-        background: transparent none no-repeat 0 0;
-        position: absolute;
-        bottom: 0;
-        right: 43px;
-        width: 523px;
-        height: 186px;
-        background-size: 100% auto;
-        z-index: 2;
-        filter: hue-rotate(145deg);
-    }
-
-
-    img {
-        display: block;
-        width: 100%;
-        border: 0;
-    }
-
-    .deaths {
-        opacity: 0;
-        transition: opacity 3s ease-in-out 0.25s;
-    }
-
-    .state:hover .deaths {
-        opacity: 0.9;
-    }
-
-    #fl .cases-new:after {
-        background-image: url(./fl-cases-total.png);
-    }
-
-    #nj .cases-new:after {
-        background-image: url(./nj-cases-total.png);
-    }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="states">
-    <div id="fl" class="state">
+    <a href="https://www.google.com/search?q=florida%20coronavirus%20statistics" target="_blank" title="Go to source" id="fl" class="state">
+        <h3>Florida</h3>
         <div class="cases-new"><img src="fl-cases-new.png"></div>
         <div class="deaths"><img src="fl-deaths.png"></div>
-    </div>
-    <div id="nj" class="state">
+    </a>
+    <a href="https://www.google.com/search?q=new%20jersey%20coronavirus%20statistics" target="_blank" title="Go to source" id="nj" class="state">
+        <h3>New Jersey</h3>
         <div class="cases-new"><img src="nj-cases-new.png"></div>
         <div class="deaths"><img src="nj-deaths.png"></div>
-    </div>
+    </a>
 </div>
 </body>
 </html>

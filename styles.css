@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #111;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.states {
+    padding: 3rem;
+}
+
+.state {
+    display: block;
+    width: 100%;
+    max-width: 652px;
+    position: relative;
+    height: 348px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+.state > div {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h3 {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 35px;
+    z-index: 59;
+    margin: 0;
+    background: #fff;
+    width: 300px;
+    color: #111;
+}
+
+.cases-new:after {
+    content: " ";
+    background: transparent none no-repeat 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 43px;
+    width: 523px;
+    height: 186px;
+    background-size: 100% auto;
+    z-index: 2;
+    filter: hue-rotate(145deg);
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+.deaths {
+    opacity: 0;
+    transition: opacity 3s ease-in-out 0.25s;
+}
+
+.state:hover .deaths {
+    opacity: 0.9;
+}
+
+#fl .cases-new:after {
+    background-image: url(./fl-cases-total.png);
+}
+
+#nj .cases-new:after {
+    background-image: url(./nj-cases-total.png);
+}
