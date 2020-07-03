@@ -10,7 +10,8 @@ body * {
 }
 
 .states {
-    padding: 3rem;
+    padding: 3rem 0;
+    min-width: 680px;
 }
 
 .state {
@@ -19,10 +20,9 @@ body * {
     max-width: 652px;
     position: relative;
     height: 348px;
-    margin-bottom: 2rem;
     overflow: hidden;
     text-decoration: none;
-
+    margin: 0 auto 2rem;
 }
 
 .state > div {
